@@ -52,3 +52,42 @@ a{
     vertical-align: middle;
     padding-right: 10px;
 }
+
+/*header styling*/
+.header{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    padding: 7px;
+    font-size: 10px;
+}
+
+svg{
+    width: 25px;
+}
+
+.search-button{
+    border: none;
+    background-color: white;
+    vertical-align: middle;
+}
+
+input{
+    width: 60%;
+    border-radius: 10px;
+    background-color: rgb(235, 231, 231);
+    border: none;
+    height: 20px;
+    padding-left: 10px;
+}
+
+.buttons>button{
+    background-color: rgb(57, 193, 247);
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+    margin: 5px;
+    font-size: 10px;
+}
+
+/*content section styling*/
