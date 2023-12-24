@@ -2,34 +2,23 @@ body{
     margin: 0;
 }
 
-/*first container layout*/
 .container-1{
     display: grid;
-    grid-template-columns: 1fr 6fr;
-    grid-template-rows: 900px;
-    grid-template-areas: "nav container-2";
-}
-
-.container-2{
-    grid-area: container-2;
+    grid-template-columns: 200px 6fr;
+    grid-template-rows: 150px 700px;
+    grid-template-areas: "nav header" 
+        "nav content";
 }
 
 .nav{
-    background-color: rgb(57, 193, 247);
     grid-area: nav;
-}
-
-.container-1 > div{
-    border: 1px;
-}
-/*second containor layout*/
-.container-2{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 200px 700px;
-    grid-template-areas: "header" "content";
+    grid-template-rows: 50px 200px 100px ;
+    gap: 30px;
+    background-color: rgb(57, 193, 247);
+    padding-top: 20px;
+    padding-left: 20px;
 }
-
 .header{
     grid-area: header;
 }
@@ -37,4 +26,29 @@ body{
 .content{
     background-color: rgb(233, 228, 228);
     grid-area: content;
+}
+/*navigation section styling*/
+a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+.nav-2, .nav-3{
+    display: grid;
+}
+
+.nav-1 > svg{
+    width: 30px;
+    vertical-align: middle;
+    padding-right: 10px;
+
+}
+
+.nav-2>div>svg, .nav-3>div>svg{
+    width: 20px;
+    vertical-align: middle;
+    padding-right: 10px;
 }
