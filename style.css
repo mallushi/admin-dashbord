@@ -80,14 +80,36 @@ input{
     padding-left: 10px;
 }
 
+.right-top{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    align-items: center;
+    justify-items: end;
+}
+
+.left-bottom{
+    display: grid;
+    grid-template-columns: 50px 4fr;
+    grid-template-rows: 1fr;
+    padding-left: 10px;
+    align-items: center;
+}
+
 .buttons>button{
     background-color: rgb(57, 193, 247);
-    border: none;
+    border-color: rgb(86, 163, 235);
     border-radius: 10px;
     padding: 5px;
     color: white;
     margin: 5px;
-    font-size: 10px;
+    font-size: 12px;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 40px;
+    align-content: space-around;
 }
 
 /*content section styling*/
